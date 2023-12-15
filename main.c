@@ -1,6 +1,4 @@
 #include "monty.h"
-#include <stdio.h>
-
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
@@ -37,11 +35,11 @@ int main(int argc, char *argv[])
 		counter++;
 		if (read_line > 0)
 		{
-			execle(content, &stack, counter, file);
+			execution_fns(content, &stack, counter, file);
 		}
 		free(content);
 	}
-	free_stack_func(stack);
+	free_stack_fns(stack);
 	fclose(file);
 return (0);
 }

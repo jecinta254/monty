@@ -1,12 +1,12 @@
 #include "monty.h"
 /**
- * pall_func -  prints all the values on the stack,
+ * pall_fns -  prints all the values on the stack,
  * starting from the top of the stack.
  * @head: stack head
  * @counter: no used
  * Return: no return
 */
-void pall_func(stack_t **head, unsigned int counter)
+void pall_fns(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	(void)counter;

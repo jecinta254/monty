@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-  *rotate_bottom_func- rotates the stack to the bottom.
+  *rotate_bottom_fns- rotates the stack to the bottom.
   *@head: stack head
   *@counter: line_number
   *Return: no return
  */
-void rotate_bottom_func(stack_t **head, __attribute__((unused)) unsigned int counter)
+void rotate_bottom_fns(stack_t **head, __attribute__((unused)) unsigned int counter)
 {
 	stack_t *copy;
 

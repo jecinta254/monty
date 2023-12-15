@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * push_func -  pushes an element to the stack.
+ * push_fns -  pushes an element to the stack.
  * @head: stack head
  * @counter: line_number
  * Return: no return
 */
-void push_func(stack_t **head, unsigned int counter)
+void push_fns(stack_t **head, unsigned int counter)
 {
 	int n, j = 0, flag = 0;
 
@@ -21,17 +21,17 @@ void push_func(stack_t **head, unsigned int counter)
 		{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 			fclose(bus.file);
 			free(bus.content);
-			free_stack_func(*head);
+			free_stack_fns(*head);
 			exit(EXIT_FAILURE); }}
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack_func(*head);
+		free_stack_fns(*head);
 		exit(EXIT_FAILURE); }
 	n = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode_func(head, n);
+		addnode_fns(head, n);
 	else
 		add_queue(head, n);
 }
